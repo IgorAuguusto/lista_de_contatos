@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Formulario</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/materialize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<div id="container" class="card-panel">  
+    <form>     
+        <label>Nome:</label>
+        <input type="text" id="nome" placeholder="Nome do usuário" />
+    
+        <label>Telefone:</label>
+        <input type="number" id="telefone" placeholder="Telefone do usuário" />
+    
+        <label>Cidade:</label>
+        <input type="text" id="cidade" placeholder="Cidade do usuário" />
+    
+        <label for="estado">Estado:</label>
+        <select id="estado">
+          <option value="UF" disabled selected>UF</option>
+          <option value="Acre">AC</option>
+          <option value="Alagoas">AL</option>
+          <option value="Amapa">AP</option>
+          <option value="Amazonas">AM</option>
+          <option value="Bahia">BA</option>
+          <option value="Ceara">CE</option>
+          <option value="EspiritoSanto">ES</option>
+          <option value="Goias">GO</option>
+          <option value="Maranhao">MA</option>
+          <option value="MatoGrossodoSul">MS</option>
+          <option value="MinasGerais">MG</option>
+          <option value="Para">PA</option>
+          <option value="Paraiba">PB</option>
+          <option value="Parana">PR</option>
+          <option value="Pernambuco">PE</option>
+          <option value="Piaui">PI</option>
+          <option value="RiodeJaneiro">RJ</option>
+          <option value="RioGrandedoNorte">RN</option>
+          <option value="RioGrandedoSul">RS</option>
+          <option value="Rondonia">RO</option>
+          <option value="Roraima">RR</option>
+          <option value="SantaCatarina">SC</option>
+          <option value="SaoPaulo">SP</option>
+          <option value="Sergipe">SE</option>
+          <option value="Tocantins">TO</option>
+          <option value="DistritoFederal">DF</option>
+        </select>
+        
+        <br>
+        
+        <label>E-mail:</label>
+        <input type="text" id="email" placeholder="E-mail do usuário" />
+    
+        <label>Informações:</label>
+        <textarea  type="text" id="informacao"></textarea>
+    
+        <label>Categoria:</label>
+        <select id="categoria">
+          <option value="cliente" selected="selected">CLIENTE</option>
+          <option value="funcionario">FUNCIONARIO</option>
+          <option value="gerente">GERENTE</option>
+        </select>        
+    </form>
+    
+    <div id="salvo">
+        Salvo Com Sucesso
+    </div>
+    
+    <div id="erro">
+        Erro ao Salvar
+    </div>
+    
+    <button onclick="salvarStorage()" class="btn waves-effect waves-light">Salvar....</button>
+    <button onclick="limparCampos()" class="btn waves-effect waves-light"> Limpar</button>
+  
+  </div>
+	
+  <!-- Import JS-->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/materialize.js"></script>
+
+	<script>
+		 $('select').formSelect();
+	</script>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

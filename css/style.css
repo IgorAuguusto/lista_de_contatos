@@ -1,0 +1,50 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+div#container {
+    margin: auto;
+    width: 100% !important;
+    max-width: 500px;
+    margin-top: 7% !important;
+}
+
+label{
+    color: #606060;
+    font-size: 15px;
+    font-weight: bold; 
+}
+
+button{
+	width: 49.5%;
+}
+
+#salvo{
+    display: none;
+    background-color: aquamarine;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    color: #606060;
+    font-weight: bold;
+
+}
+
+#erro{
+    display: none;
+    background-color: rgba(255, 99, 132, 0.7);
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    color: #606060;
+    font-weight: bold;
+
+}
+#informacao{
+    width: 100% !important;
+    height: 10vmin !important ;
+    border-color: rgb(158, 158, 158);
+    border-radius: 5px;
+
+}
